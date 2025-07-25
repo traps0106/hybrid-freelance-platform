@@ -6,6 +6,7 @@ import ResponsiveAppBar from "./NavBar.jsx"
 import BoxBasic from './WebBody.jsx'
 import AnimatedBackground from './AnimatedBackground.jsx';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import CreateProject from './CreateProject.jsx'
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<BoxBasic />} />
         <Route path="/home" element={<BoxBasic />} />
+        <Route path="/post-projects" element={<CreateProject />} />
         
       </Routes>
     </Router>
